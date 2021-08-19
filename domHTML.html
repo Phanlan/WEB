@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM HTML</title>
+    </head>
+    <body>
+        <p id="name">This is tag P 1</p>
+        <p id="email">This is tag P 2</p>
+        <a href="https://suntech.edu.vn">SUNTECH Việt Nam</a>
+        <div id="contant">
+            <p>Test content in P</p>
+            <span>UNTECH Vn</span>
+        </div>
+
+
+        <input type="" name="Nguyen van A" id="phone" number='1'/>
+
+        <script>
+            let content=document.getElementById('name').innerHTML;
+            let content1=document.getElementById('email').innerText;
+            console.log(content);
+            console.log(content1);
+            let content3=document.getElementById('contant').innerHTML;
+            console.log(content3);
+            let content4=document.getElementById('contant').innerText;
+            console.log(content4);
+
+
+            let name = document.getElementById('phone').getAttribute('name');
+            console.log(name);
+
+
+            let number = document.getElementById('phone').getAttribute('number');
+            console.log(number);
+            document.getElementById('phone').setAttribute('number', 1000);
+            let newNumber = document.getElementById('phone').getAttribute('number')
+            console.log(newNumber);
+        </script>
+
+    </body>
+</html>

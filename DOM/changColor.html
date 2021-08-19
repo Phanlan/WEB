@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Color</title>
+    </head>
+    <body>
+        <button onclick="redColor()">red</button>
+        <button onclick="blueColor()">blue</button>
+        <button onclick="orangeColor()">orange</button>
+        <button onclick="changeText()">change text</button>
+        <button onclick="resetColor()">reset</button>
+        <div id="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ipsum amet provident molestiae inventore iste magnam officia praesentium! 
+            Ab, nemo quos quisquam qui ipsa debitis commodi impedit autem iste odio dolores?
+        </div>
+        <script>
+            
+            function redColor() {
+                document.getElementById('content').style.color = 'red';
+            }
+            function blueColor() {
+                document.getElementById('content').style.color = 'blue';
+            }
+            function orangeColor() {
+                document.getElementById('content').style.color = 'orange';
+            }
+            function changeText() {
+                document.getElementById('content').innerHTML='Bánh bao';
+            }
+            function resetColor() {
+                document.getElementById('content').style.color = 'black';
+                document.getElementById('content').innerHTML='Lorem ipsum dolor sit amet consectetur adipisicing elit.Ipsum amet provident molestiae inventore iste magnam officia praesentiumAb, nemo quos quisquam qui ipsa debitis commodi impedit autem iste odio dolores?';
+            }
+            
+            
+             
+        </script>
+    </body>
+</html>
